@@ -20,7 +20,7 @@ body{
         background-size: cover;
         opacity: 0;
         transition: opacity 0.5s ease;
-        margin-top: 8%;
+        z-index: -1;
     }
 
 nav{
@@ -162,7 +162,7 @@ nav.fa{
         background-size: cover;
         opacity: 0;
         transition: opacity 0.5s ease;
-        margin-top: 8%;
+        z-index: -1;
     }
 }
 
