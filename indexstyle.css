@@ -168,13 +168,15 @@ nav.fa{
     font-weight: 600;
 }
 .icons .fa{
-    color:#fff;
     margin:0 20px;
     cursor: pointer;
     padding:18px 0;
 }
-.fa-heart-o{
-    color:#f44336;
+.icons .fa-heart{
+    color:#78d510;
+}
+.icons .fafa-heart{
+    color:#78d510;
 }
 .icons .fa-linkedin, .icons .fa-instagram, .icons .fa-github {
     font-size: 2.5em; 
