@@ -10,11 +10,20 @@ body{
 .header{
     min-height : 100vh;
     width: 100%;
-    background-image: url(Images/Background.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
 }
+.text-box {
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        background-image: url('Images/Background.jpg'); 
+        background-position: center center; 
+        background-size: cover;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        margin-top: 8%;
+        
+    }
+
 nav{
     display: flex;
     justify-content: space-between;
