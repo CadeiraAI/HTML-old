@@ -171,12 +171,26 @@ nav.fa{
     }
 }
 
+/*-----------------Slogan-----------------*/
+.SloganTitle{
+    text-align: Center;
+    width:100%;
+    padding-top:0;
+    color: white;
+    font-size: 24px;
+}
+.SloganText{
+    width:100%;
+    text-align:center;
+    padding-top:2%;
+    color:white;
+}
 
 /*------footer------*/
 .footer{
     width: 100%;
     text-align:center;
-    padding-top: 90px;
+    padding-top: 180px;
     padding-bottom: 30px;
     color:white;
 }
