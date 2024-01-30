@@ -188,7 +188,7 @@ nav.fa{
     max-width:80%;
     margin:auto;
     padding-top:20px;
-    font-size: 26px;
+    font-size: 24px;
     color:white;
 }
 .content-contain{
@@ -213,6 +213,7 @@ nav.fa{
     margin-right:0;
     margin-left:auto;
 }
+
 .Tableimg img{
     width:100%;
     height:auto;
@@ -238,6 +239,7 @@ nav.fa{
     margin:auto;
     padding-top:20px;
     font-size: 26px;
+    color: white;
 }
 .content-contain{
     display:flex;
@@ -246,13 +248,25 @@ nav.fa{
     max-width:80%;
     margin:auto;
 }
+.Ipad1img,
+.Ipad2img{
+    overflow: scroll;
+}
 .Ipad1img img{
     max-height:  27vw;
     max-width: 40vw;
+    
 }
+
 .Ipad2img img{
     max-height:  27vw;
     max-width: 40vw;
+    
+}
+.scrollImage1,
+.scrollImage2{
+    display:none;
+    transition: opacity 1s ease-in-out;
 }
 
 }
@@ -324,11 +338,10 @@ nav.fa{
 .footer{
     width: 100%;
     text-align:center;
-    padding-top: 90px;
+    padding-top: 170px;
     padding-bottom: 30px;
     color:white;
 }
-
 .footer h2{
     margin-bottom:25px;
     margin-top: 20px;
