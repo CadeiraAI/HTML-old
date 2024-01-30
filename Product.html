@@ -55,10 +55,10 @@
     </section>
 <section class="Media">
       <div class="content-contain">
-          <div class="Ipad1img">
+          <div class="Ipad1img scroll-fade">
             <a><img src="Images/Ipad1.JPG" id= "scrollImage1"></a>
         </div>
-          <div class="Ipad2img">
+          <div class="Ipad2img scroll-fade">
             <a><img src="Images/Ipad2.JPG" id= "scrollImage2"></a>
         </div>
     </div>
@@ -94,28 +94,36 @@ function hideMenu() {
     
 <!------------Javascript for image-------->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-            var image1 = document.getElementById("scrollImage1");
-            var image2 = document.getElementById("scrollImage2");
-
-            window.addEventListener("scroll", function () {
-                var scrollPosition = window.scrollY;
-
-                // Adjust the threshold as needed
-                if (scrollPosition > 480) {
-                    image1.style.display = "block";
-                    image2.style.display = "block";
-                    image2.classList.add("animate__animated")
-                    image2.classList.add("animate__fadeIn")
-                    image1.classList.add("animate__animated")
-                    image1.classList.add("animate__fadeIn")
-                } else {
-                    image1.style.display = "none";
-                    image2.style.display = "none";
-                }
-            });
-});
-    </script>
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  
+    function handleScroll() {
+      const scrollImage1 = document.getElementById("scrollImage1");
+      const scrollImage2 = document.getElementById("scrollImage2");
+  
+      if (isElementInViewport(scrollImage1)) {
+        scrollImage1.classList.add("animate__animated", "animate__fadeIn");
+      }
+  
+      if (isElementInViewport(scrollImage2)) {
+        scrollImage2.classList.add("animate__animated", "animate__fadeIn");
+      }
+  
+      if (isElementInViewport(scrollImage1) && isElementInViewport(scrollImage2)) {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    }
+  
+    window.addEventListener("scroll", handleScroll);
+  </script>
+  
         
     </body>
 </html>

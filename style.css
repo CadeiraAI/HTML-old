@@ -258,26 +258,29 @@ nav.fa{
 }
 .Ipad1img,
 .Ipad2img{
-    overflow: scroll;
+    overflow: hidden;
 }
-.Ipad1img img{
-    max-height:  27vw;
+.Ipad1img img,
+.Ipad2img img {
+    max-height: 27vw;
     max-width: 40vw;
-    
+    display: block;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.scrollImage1.animate__animated.animate__fadeIn,
+.scrollImage2.animate__animated.animate__fadeIn {
+    opacity: 1 !important; 
+    display: block !important; 
 }
 
-.Ipad2img img{
-    max-height:  27vw;
-    max-width: 40vw;
-    
-}
 .scrollImage1,
-.scrollImage2{
-    display:none;
+.scrollImage2 {
+    opacity: 1;
     transition: opacity 1s ease-in-out;
 }
 
-}
 @media (max-width: 700px) {
     .Media{
         align-items: center;
