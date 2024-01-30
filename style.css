@@ -135,11 +135,19 @@ nav.fa{
 }
 
 /*------contact us page-------------------------*/
+.ContacTitle{
+    max-width:80%;
+    margin:auto;
+    padding-top:20px;
+    font-size: 24px;
+    text-align: center;
+    color:white;
+}
 .mail-box{
     margin:auto;
     width:100%;
     max-width:80%;
-    padding-top: 5%;
+    padding-top: 20px;
     text-align:center;
     color: white;
     font-size: 20px;
