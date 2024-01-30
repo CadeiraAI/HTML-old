@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/js/all.min.js"></script>
 
 </head>
@@ -104,6 +105,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (scrollPosition > 480) {
                     image1.style.display = "block";
                     image2.style.display = "block";
+                    image2.classList.add("animate__animated")
+                    image2.classList.add("animate__fadeIn")
+                    image1.classList.add("animate__animated")
+                    image1.classList.add("animate__fadeIn")
                 } else {
                     image1.style.display = "none";
                     image2.style.display = "none";
