@@ -285,10 +285,12 @@ nav.fa{
         align-items: center;
     }
     .Ipad1img img {
-        max-width: 90%;
+        max-width: 80vw;
+        max-height:80vw;
     }
     .Ipad2img img {
-        max-width: 90%;
+        max-width: 80vw;
+        max-height: 80vw;
     }
 }
 
