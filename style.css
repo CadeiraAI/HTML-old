@@ -240,6 +240,28 @@ nav.fa{
     
 }
 
+.DemoTitle{
+    text-align: center;
+    max-width:80%;
+    margin:auto;
+    padding-top:20px;
+    font-size: 26px;
+    color: white;
+}
+.content-container{
+    align-items:center;
+    justify-content: space-between;
+    max-width:60vw;
+    width: 60vw;
+    margin:auto;
+}
+.Cadeira-Demo video{
+    align-items:center;
+    width: 60vw;
+    max-width:60vw;
+    margin:auto;
+}
+
 .MediaTitle{
     text-align: center;
     max-width:80%;

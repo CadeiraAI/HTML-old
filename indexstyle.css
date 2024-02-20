@@ -15,7 +15,7 @@ body{
         position: absolute;
         width: 100%;
         min-height: 100vh;
-        background-image: url('Images/Background.jpg'); 
+        background-image: url('Images/Background2.jpg'); 
         background-position: center center; 
         background-size: cover;
         opacity: 0;
@@ -73,7 +73,7 @@ nav img{
 }
 @media screen and (max-width: 700px) {
             .text-box {
-                background-image: url('Images/MobBackground.png');
+                background-image: url('Images/MobBackground2.jpg');
             }
         }
 .text-box h1{
@@ -162,7 +162,7 @@ nav.fa{
         position: absolute;
         width: 100%;
         min-height: 100vh;
-        background-image: url('Images/MobBackground.png'); 
+        background-image: url('Images/MobBackground2.jpg'); 
         background-position: center center; 
         background-size: cover;
         opacity: 0;
