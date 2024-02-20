@@ -251,14 +251,14 @@ nav.fa{
 .content-container{
     align-items:center;
     justify-content: space-between;
-    max-width:60vw;
-    width: 60vw;
+    max-width:70vw;
+    width: 70vw;
     margin:auto;
 }
 .Cadeira-Demo video{
     align-items:center;
-    width: 60vw;
-    max-width:60vw;
+    width: 70vw;
+    max-width:70vw;
     margin:auto;
 }
 
@@ -303,6 +303,16 @@ nav.fa{
 }
 
 @media (max-width: 700px) {
+    .content-container {
+        align-items: center;
+        max-width: 100vw;
+    }
+    .Cadeira-Demo {
+        max-width: 100vw;
+    }
+    .Cadeira-Demo video {
+        width: 110vw;
+    }
     .Media{
         align-items: center;
     }
