@@ -13,7 +13,7 @@ body{
 }
 .text-box {
         position: absolute;
-        width: 100%;
+        width: 100vw;
         min-height: 100vh;
         background-image: url('Images/Background2.svg'); 
         background-position: center center; 
@@ -173,11 +173,12 @@ nav.fa{
 
 /*-----------------Slogan-----------------*/
 .SloganTitle{
-    text-align: Center;
+    text-align: center;
     width:100%;
     padding-top:0;
     color: white;
     font-size: 24px;
+    padding-top: 2%;
 }
 .SloganText{
     width:100%;

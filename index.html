@@ -80,14 +80,24 @@ function hideMenu() {
     
 <!---------------Javascript for background------------------>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        var header = document.querySelector(".text-box");
-        header.style.backgroundImage = "url('Images/Background2.svg')"; 
+document.addEventListener("DOMContentLoaded", setHeaderBackground);
+window.addEventListener("resize", setHeaderBackground);
+
+function setHeaderBackground() {
+    var header = document.querySelector(".text-box");
+    if (header) {
+        if (window.innerWidth > 700) {
+            header.style.backgroundImage = "url('Images/Background2.svg')";
+        } else {
+            header.style.backgroundImage = "url('Images/MobBackground2.jpg')";
+        }
         header.style.opacity = 1;
-    }, 1000);
-});
+    }
+}
+
+
 </script>
+    
     
     
     
