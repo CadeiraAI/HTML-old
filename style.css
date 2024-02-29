@@ -38,10 +38,13 @@ nav img{
     content: "";
     width: 0%;
     height: 2px;
-    background: #78d510;
+    background: #7cfc01;
     display: block;
     margin: auto;
     transition: 0.5s;
+}
+.nav-links h4 li a.demo { 
+    color: #7cfc01; 
 }
 .nav-links h4 li:hover::after{
     width: 100%;
@@ -240,35 +243,14 @@ nav.fa{
     
 }
 
-.DemoTitle{
-    text-align: center;
-    max-width:80%;
-    margin:auto;
-    padding-top:20px;
-    font-size: 26px;
-    color: white;
-}
-.content-container{
-    align-items:center;
-    justify-content: space-between;
-    max-width:70vw;
-    width: 70vw;
-    margin:auto;
-}
-.Cadeira-Demo video{
-    align-items:center;
-    width: 70vw;
-    max-width:70vw;
-    margin:auto;
-}
-
 .MediaTitle{
     text-align: center;
     max-width:80%;
     margin:auto;
-    padding-top:20px;
+    padding-top:30px;
     font-size: 26px;
     color: white;
+    padding-bottom:20px;
 }
 .content-contain{
     display:flex;
@@ -325,6 +307,70 @@ nav.fa{
         max-height: 80vw;
     }
 }
+
+
+/*_______________________________________Demo_______________________________*/
+.DemoTitle{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+.Demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+}
+.demo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    color: white;
+}
+
+.DemoText,
+.Cadeira-Demo {
+    flex: 1; /* Each child takes up equal space */
+    text-align: center;
+    padding: 0 10px;
+}
+
+
+.Cadeira-Demo {
+    text-align: center;
+}
+
+.Cadeira-Demo video {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.DemoText p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    color: white;
+    margin-right: 20px;
+
+}
+
+
+
+@media (max-width: 700px) {
+    .demo-container {
+        flex-direction: column; 
+    }
+
+    .Cadeira-Demo video {
+        width: 90%; 
+    }
+}
+
 
 /*_______________________________________About_______________________________*/
 

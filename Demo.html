@@ -4,7 +4,7 @@
     <meta name="google-site-verification" content="BkJtGkSDAHT9exhaigFtJRcYo6mkxjk2dxZOh7o2eqg" />
     <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
     <title>Cadeira AI</title>
-    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     <body style="background-color:black;">
    <section class= "header">
        <nav>
-            <a href=""><img src=""></a>
+        <a href="index.html"><img src="Images/Cad.png"></a>
            <div class="nav-links" id="navLinks">
                <i id="timesIcon" class="fa fa-times" onclick="hideMenu()"></i>
                <h4>
@@ -31,28 +31,35 @@
            <i class="fa fa-bars" onclick="showMenu()"></i>
        </nav>
 <div class="text-box">
-    <p>
-    </p>
+        <p>
+        </p>
 </div>
-       
- </section>
+   </section>
 
- <section>
- <div class="SloganTitle" aria-label = "Cadeira AI slogan">
-    <h1>When artificial intelligence finds your perfect table</h1>
-</div>
- </section>
- <section>
-    <div class="SloganText" aria-label="Cadeira AI general information about the product">
- <p>Through our reservation platform, we feed the creativity of chefs and diners, proportioning the necessary tools to prepare the perfect dinner. 
-</p>
-</div>
+<section class="DemoTitle">
+        <h1>Demo</h1>
+        </section>
+<section class="Demo" aria-label="Demo video of the artificial assistant">
+          <div class="demo-container">
+                <div class="DemoText">
+                    <p>
+                        Our AI assistant is streamlined for efficiency, able to handle numerous calls simultaneously to simplify the reservation process. Trained on a broad vocabulary and a large language model, it accommodates various languages and dialects, ensuring inclusivity. It's designed to alert staff of any issues, maintaining a smooth operation and allowing personnel to focus on in-person customer service. We're proud to innovate in the restaurant reservation space globally with our AI technology.
+                    </p>
+                </div>
+              <div class="Cadeira-Demo">
+                <a><video src="Images/Cadeira-Demo.mp4" controls autoplay muted alt="Cadeira AI demo technology of artificial intelligence">
+                  Your browser does not support the video tag.
+                </video></a>
+            </div>
+        </div>
 </section>
 
     
+
+
     
-    
-    
+
+
 <!---- Footer---->
 <section class="footer" aria-label ="How to connect with Cadeira AI and contact information">
     <h2>Connect With Us</h2>
@@ -60,10 +67,11 @@
         <a href="https://github.com/CadeiraAI" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/company/cadeira-ia" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
-    <p>© Cadeira AI 2024</p>
+    <p>© CadeiraAI 2024</p>
     <p>Made with <i class="fa fa-heart"></i> by Cadeira AI</p>
 </section>
-<!-------Javascript for toggle menu------->
+        
+    <!-------Javascript for toggle menu------->
 <script>
    var navLinks = document.getElementById("navLinks");
 var timesIcon = document.getElementById("timesIcon");
@@ -77,30 +85,7 @@ function hideMenu() {
     navLinks.classList.remove("active");
     timesIcon.classList.remove("active");
 }
-    </script>
+        </script>
+
     </body>
-    
-<!---------------Javascript for background------------------>
-<script>
-document.addEventListener("DOMContentLoaded", setHeaderBackground);
-window.addEventListener("resize", setHeaderBackground);
-
-function setHeaderBackground() {
-    var header = document.querySelector(".text-box");
-    if (header) {
-        if (window.innerWidth > 700) {
-            header.style.backgroundImage = "url('Images/Background2.svg')";
-        } else {
-            header.style.backgroundImage = "url('Images/MobBackground2.jpg')";
-        }
-        header.style.opacity = 1;
-    }
-}
-
-
-</script>
-    
-    
-    
-    
 </html>

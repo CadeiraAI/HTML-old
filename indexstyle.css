@@ -54,10 +54,13 @@ nav img{
     content: "";
     width: 0%;
     height: 2px;
-    background: #78d510;
+    background: #7cfc01;
     display: block;
     margin: auto;
     transition: 0.5s;
+}
+.nav-links h4 li a.demo { 
+    color: #7cfc01; 
 }
 .nav-links h4 li:hover::after{
     width: 100%;
