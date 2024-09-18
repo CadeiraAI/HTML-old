@@ -47,12 +47,26 @@
     </p>
 </div>
        
- </section>
-        
-<div class="container" aria-label = "Cadeira AI email">
-  <section class="contact" aria-label = "How to contact Cadeira AI">
-        <a href="mailto:info@cadeira.click" class="contact-btn">CONTACT US</a>
-    </section>
+<section class ="contact" id = "contact">
+    <h2 class ="heading">Contact Us</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+    <div class = "input-group">
+        <div class = "input-box">
+        <input type="hidden" name="apikey" value="1b4df796-e808-47aa-86bc-f49e32b26d8f" />
+        <input type ="text" name="full_name" placeholder ="First and Last Name" required="required">
+        <input type ="email" name="email" placeholder ="Email" required="required">
+        </div>
+        <div class="input-box">
+            <input type="text" name="phone_number" placeholder="Phone Number" required="required">
+            <input type="text" name="subject" placeholder="Subject" required="required">
+        </div>
+        </div>
+        <div class = "input-group-2">
+            <textarea name="message" id cols ="30" rows = "10" placeholder="Message" required="required"></textarea>
+            <input type = "submit" value="Send Message" class="btn">
+        </div>
+    </form>
+</section>
     
     
     

@@ -13,7 +13,7 @@ body{
 }
 .text-box {
         position: absolute;
-        width: 100vw;
+        min-width: 100vw;
         min-height: 100vh;
         background-image: url('Images/Background2.svg'); 
         background-position: center center; 

@@ -137,63 +137,88 @@ nav.fa{
     }
 }
 
-/*------contact us page-------------------------*/
-.ContacTitle{
-    width:100%;
-    margin:auto;
-    padding-top:20px;
-    font-size: 24px;
+/*-----------------Contact-----------------*/
+
+.contact {
+    padding: 50px 0;
     text-align: center;
-    color:white;
-}
-.mail-box{
-    text-align:justify;
-    justify-content: space-between;
-    max-width:80%;
-    margin:auto;
-    font-size:16px;
-    line-height:1.6;
-    text-align: justify;
-    color:white;
+    align-items: center;
 }
 
-.contact{
-    margin:10px auto;
-    width: 100%;
-    max-width: 80%;
-    background-position: center center;
-    background-size: 95%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
+.heading {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
 }
-.contact-btn {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #78d510;
-    color: white;
-    text-decoration: none;
+
+.form {
+    background-color: #222;
+    max-width: 80vw;
+    align-items: center;
+    padding-left:10vw;
+}
+
+.input-group {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    padding-left:10vw;
+}
+
+.input-box {
+    flex: 1;
+    justify-self: center;
+}
+
+.input-box input[type="text"],
+.input-box input[type="email"],
+.input-box input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: none;
     border-radius: 5px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"].btn {
+    background-color: lightskyblue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.contact-btn:hover {
-    background-color: white;
-    color:#78d510;
-    font-size: 17px;
+
+input[type="submit"].btn:hover {
+    background-color: #e03e00;
 }
 
-    
-@media(max-width: 700px){
-    .mail-box{
-        font-size:15px;
-    }
-    .contact{
-        padding:70px 0;
-    }
-    .contact h2{
-        font-size: 24px;
-    }
+.input-group-2 {
+    padding-left:10vw;
+    max-width: 80vw;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #bbb;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    outline: none;
+    background-color: #444;
 }
 
 /*------------------------------------Product--------------------------------------*/
@@ -337,7 +362,7 @@ nav.fa{
 
 .DemoText,
 .Cadeira-Demo {
-    flex: 1; /* Each child takes up equal space */
+    flex: 1; 
     text-align: center;
     padding: 0 10px;
 }
